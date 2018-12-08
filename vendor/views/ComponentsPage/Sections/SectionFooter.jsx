@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 // nodejs library that concatenates classes
 import classNames from 'classnames'
 // @material-ui/core components
@@ -560,7 +561,7 @@ const SectionFooter = (props) => {
                     </Button>
                   </li>
                 </ul>
-                <h5>Numbers Don't Lie</h5>
+                <h5>{`Numbers Don't Lie`}</h5>
                 <h4>
                   14.521 <small>Freelancers</small>
                 </h4>
@@ -621,8 +622,8 @@ const SectionFooter = (props) => {
                   <h5>Material Kit PRO</h5>
                 </a>
                 <p>
-                  Probably the best UI Kit in the world! We know you've been
-                  waiting for it, so don't be shy!
+                  {`Probably the best UI Kit in the world! We know you've been
+                  waiting for it, so don't be shy!`}
                 </p>
               </GridItem>
               <GridItem xs={12} sm={2} md={2}>
@@ -703,6 +704,10 @@ const SectionFooter = (props) => {
       </div>
     </div>
   )
+}
+
+SectionFooter.propTypes = {
+  classes: PropTypes.object,
 }
 
 export default withStyles(styles)(SectionFooter)

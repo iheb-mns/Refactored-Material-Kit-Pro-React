@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import dynamic from 'next/dynamic'
 // nodejs library that concatenates classes
 import classNames from 'classnames'
@@ -139,12 +140,12 @@ class ProductPage extends React.Component {
                         title: 'Description',
                         content: (
                           <p>
-                            Eres' daring 'Grigri Fortune' swimsuit has the fit
+                            {`Eres' daring 'Grigri Fortune' swimsuit has the fit
                             and coverage of a bikini in a one-piece silhouette.
                             This fuchsia style is crafted from the label's
                             sculpting peau douce fabric and has flattering
                             cutouts through the torso and back. Wear yours with
-                            mirrored sunglasses on vacation.
+                            mirrored sunglasses on vacation.`}
                           </p>
                         ),
                       },
@@ -152,13 +153,13 @@ class ProductPage extends React.Component {
                         title: 'Designer Information',
                         content: (
                           <p>
-                            An infusion of West Coast cool and New York
+                            {`An infusion of West Coast cool and New York
                             attitude, Rebecca Minkoff is synonymous with It girl
                             style. Minkoff burst on the fashion scene with her
                             best-selling 'Morning After Bag' and later expanded
                             her offering with the Rebecca Minkoff Collection - a
-                            range of luxe city staples with a \"downtown
-                            romantic\" theme.
+                            range of luxe city staples with a "downtown
+                            romantic" theme.`}
                           </p>
                         ),
                       },
@@ -345,8 +346,8 @@ class ProductPage extends React.Component {
                       </h6>
                       <h4 className={classes.cardTitle}>Dolce & Gabbana</h4>
                       <div className={classes.cardDescription}>
-                        Dolce & Gabbana's 'Greta' tote has been crafted in Italy
-                        from hard-wearing red textured-leather.
+                        {`Dolce & Gabbana's 'Greta' tote has been crafted in Italy
+                        from hard-wearing red textured-leather.`}
                       </div>
                     </CardBody>
                     <CardFooter className={classes.justifyContentBetween}>
@@ -379,9 +380,9 @@ class ProductPage extends React.Component {
                       <h6 className={classes.cardCategory}>Popular</h6>
                       <h4 className={classes.cardTitle}>Balmain</h4>
                       <div className={classes.cardDescription}>
-                        Balmain's mid-rise skinny jeans are cut with stretch to
+                        {`Balmain's mid-rise skinny jeans are cut with stretch to
                         ensure they retain their second-skin fit but move
-                        comfortably.
+                        comfortably.`}
                       </div>
                     </CardBody>
                     <CardFooter className={classes.justifyContentBetween}>
@@ -414,9 +415,9 @@ class ProductPage extends React.Component {
                       <h6 className={classes.cardCategory}>Popular</h6>
                       <h4 className={classes.cardTitle}>Balenciaga</h4>
                       <div className={classes.cardDescription}>
-                        Balenciaga's black textured-leather wallet is finished
+                        {`Balenciaga's black textured-leather wallet is finished
                         with the label's iconic 'Giant' studs. This is where you
-                        can...
+                        can...`}
                       </div>
                     </CardBody>
                     <CardFooter className={classes.justifyContentBetween}>
@@ -456,8 +457,8 @@ class ProductPage extends React.Component {
                       </h6>
                       <h4 className={classes.cardTitle}>Dolce & Gabbana</h4>
                       <div className={classes.cardDescription}>
-                        Dolce & Gabbana's 'Greta' tote has been crafted in Italy
-                        from hard-wearing red textured-leather.
+                        {`Dolce & Gabbana's 'Greta' tote has been crafted in Italy
+                        from hard-wearing red textured-leather.`}
                       </div>
                     </CardBody>
                     <CardFooter className={classes.justifyContentBetween}>
@@ -540,6 +541,10 @@ class ProductPage extends React.Component {
       </div>
     )
   }
+}
+
+ProductPage.propTypes = {
+  classes: PropTypes.object,
 }
 
 export default withStyles(productStyle)(ProductPage)

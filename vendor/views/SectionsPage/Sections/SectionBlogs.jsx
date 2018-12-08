@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 // @material-ui/core components
 import withStyles from '@material-ui/core/styles/withStyles'
 // @material-ui/icons
@@ -481,12 +482,12 @@ function SectionBlogs({ ...props }) {
                     </a>
                   </h3>
                   <h5 className={classes.description}>
-                    Don't be scared of the truth because we need to restart the
+                    {`Don't be scared of the truth because we need to restart the
                     human foundation in truth And I love you like Kanye loves
                     Kanye I love Rick Owens’ bed design but the back is too high
                     for the beams and angle of the ceiling I also wanted to
                     point out that it’s the first album to go number 1 off of
-                    streaming...
+                    streaming...`}
                   </h5>
                   <Button round color='primary'>
                     Read More
@@ -513,12 +514,12 @@ function SectionBlogs({ ...props }) {
                     </a>
                   </h3>
                   <h5 className={classes.description}>
-                    Don't be scared of the truth because we need to restart the
+                    {`Don't be scared of the truth because we need to restart the
                     human foundation in truth And I love you like Kanye loves
                     Kanye I love Rick Owens’ bed design but the back is too high
                     for the beams and angle of the ceiling I also wanted to
                     point out that it’s the first album to go number 1 off of
-                    streaming...
+                    streaming...`}
                   </h5>
                   <Button round color='primary'>
                     Read More
@@ -532,6 +533,10 @@ function SectionBlogs({ ...props }) {
       {/* Blogs 4 END */}
     </div>
   )
+}
+
+SectionBlogs.propTypes = {
+  classes: PropTypes.object,
 }
 
 export default withStyles(blogsStyle)(SectionBlogs)

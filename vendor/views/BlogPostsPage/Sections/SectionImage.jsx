@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 // @material-ui/core components
 import withStyles from '@material-ui/core/styles/withStyles'
 // @material-ui/icons
@@ -45,8 +46,8 @@ function SectionImage({ ...props }) {
                       <h6>AUTHOR OF THE MONTH</h6>
                     </Muted>
                     <p className={classes.description}>
-                      Don't be scared of the truth because we need to restart
-                      the human foundation in truth...
+                      {`Don't be scared of the truth because we need to restart
+                      the human foundation in truth...`}
                     </p>
                   </CardBody>
                   <CardFooter profile plain>
@@ -81,8 +82,8 @@ function SectionImage({ ...props }) {
                       <h6>AUTHOR OF THE WEEK</h6>
                     </Muted>
                     <p className={classes.description}>
-                      Don't be scared of the truth because we need to restart
-                      the human foundation in truth...
+                      {`Don't be scared of the truth because we need to restart
+                      the human foundation in truth...`}
                     </p>
                   </CardBody>
                   <CardFooter profile plain>
@@ -107,6 +108,10 @@ function SectionImage({ ...props }) {
       </div>
     </div>
   )
+}
+
+SectionImage.propTypes = {
+  classes: PropTypes.object,
 }
 
 export default withStyles(sectionImageStyle)(SectionImage)

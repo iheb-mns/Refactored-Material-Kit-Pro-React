@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 // @material-ui/core components
 import withStyles from '@material-ui/core/styles/withStyles'
 import Tooltip from '@material-ui/core/Tooltip'
@@ -35,11 +36,11 @@ function SectionComments({ ...props }) {
               }
               body={
                 <p className={classes.color555}>
-                  Chance too good. God level bars. I'm so proud of
+                  {`Chance too good. God level bars. I'm so proud of
                   @LifeOfDesiigner #1 song in the country. Panda! Don't be
                   scared of the truth because we need to restart the human
                   foundation in truth I stand with the most humility. We are so
-                  blessed!
+                  blessed!`}
                 </p>
               }
               footer={
@@ -83,7 +84,7 @@ function SectionComments({ ...props }) {
                     a lot of great stuff coming soon. We will keep you posted
                     for the latest news.
                   </p>
-                  <p>Don't forget, You're Awesome!</p>
+                  <p>{`Don't forget, You're Awesome!`}</p>
                 </span>
               }
               footer={
@@ -124,7 +125,7 @@ function SectionComments({ ...props }) {
                         be a lot of great stuff coming soon. We will keep you
                         posted for the latest news.
                       </p>
-                      <p>Don't forget, You're Awesome!</p>
+                      <p>{`Don't forget, You're Awesome!`}</p>
                     </span>
                   }
                   footer={
@@ -173,6 +174,10 @@ function SectionComments({ ...props }) {
       </GridContainer>
     </div>
   )
+}
+
+SectionComments.propTypes = {
+  classes: PropTypes.object,
 }
 
 export default withStyles(sectionCommentsStyle)(SectionComments)

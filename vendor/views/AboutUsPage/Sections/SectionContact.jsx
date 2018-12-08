@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 // nodejs library that concatenates classes
 import classNames from 'classnames'
 // @material-ui/core components
@@ -97,7 +98,7 @@ class SectionContact extends React.Component {
                         }}
                         value='1'
                       >
-                        I'm a Designer
+                        {`I'm a Designer`}
                       </MenuItem>
                       <MenuItem
                         classes={{
@@ -106,7 +107,7 @@ class SectionContact extends React.Component {
                         }}
                         value='2'
                       >
-                        I'm a Developer
+                        {`I'm a Developer`}
                       </MenuItem>
                       <MenuItem
                         classes={{
@@ -115,7 +116,7 @@ class SectionContact extends React.Component {
                         }}
                         value='3'
                       >
-                        I'm a Hero
+                        {`I'm a Hero`}
                       </MenuItem>
                     </Select>
                   </FormControl>
@@ -132,7 +133,7 @@ class SectionContact extends React.Component {
                   )}
                 >
                   <Button color='primary' round>
-                    Let's talk
+                    {`Let's talk`}
                   </Button>
                 </GridItem>
               </GridContainer>
@@ -142,6 +143,9 @@ class SectionContact extends React.Component {
       </div>
     )
   }
+}
+SectionContact.propTypes = {
+  classes: PropTypes.object,
 }
 
 export default withStyles(contactStyle)(SectionContact)

@@ -49,17 +49,18 @@ class SectionProducts extends React.Component {
     }
   }
   componentDidMount() {
-    var slider = this.refs.slider1
-    var priceLow = this.refs.priceLow
-    var priceHigh = this.refs.priceHigh
+    var slider = this.slider1
+    var priceLow = this.priceLow
+    var priceHigh = this.priceHigh
     nouislider
       .create(slider, {
         start: this.state.priceRange,
         connect: true,
         range: { min: 30, max: 900 },
         step: 1,
-      })
+      }) /* eslint-disable */
       .on('update', function(values, handle) {
+        /* eslint-disable */
         let currencyLow = priceLow.dataset.currency
         let currencyHigh = priceHigh.dataset.currency
         priceLow.innerHTML = currencyLow + Math.round(values[0])
@@ -123,7 +124,9 @@ class SectionProducts extends React.Component {
                         content: (
                           <CardBody className={classes.cardBodyRefine}>
                             <span
-                              ref='priceLow'
+                              ref={(c) => {
+                                this.priceLow = c
+                              }}
                               data-currency='€'
                               className={classNames(
                                 classes.pullLeft,
@@ -133,7 +136,9 @@ class SectionProducts extends React.Component {
                               €101
                             </span>
                             <span
-                              ref='priceHigh'
+                              ref={(c) => {
+                                this.priceHigh = c
+                              }}
                               data-currency='€'
                               className={classNames(
                                 classes.pullRight,
@@ -144,7 +149,12 @@ class SectionProducts extends React.Component {
                             </span>
                             <br />
                             <br />
-                            <div ref='slider1' className='slider-rose' />
+                            <div
+                              ref={(c) => {
+                                this.slider1 = c
+                              }}
+                              className='slider-rose'
+                            />
                           </CardBody>
                         ),
                       },
@@ -1049,7 +1059,7 @@ class SectionProducts extends React.Component {
                         <h4 className={classes.cardTitle}>Tom Ford</h4>
                       </a>
                       <p className={classes.description}>
-                        Immaculate tailoring is TOM FORD's forte.
+                        {`Immaculate tailoring is TOM FORD's forte.`}
                       </p>
                     </CardBody>
                     <CardFooter plain className={classes.justifyContentBetween}>
@@ -1086,7 +1096,7 @@ class SectionProducts extends React.Component {
                         <h4 className={classes.cardTitle}>Thom Sweeney</h4>
                       </a>
                       <p className={classes.description}>
-                        It's made from lightweight grey wool woven.
+                        {`It's made from lightweight grey wool woven.`}
                       </p>
                     </CardBody>
                     <CardFooter plain className={classes.justifyContentBetween}>
@@ -1217,9 +1227,9 @@ class SectionProducts extends React.Component {
                     </h3>
                   </a>
                   <p className={classes.description}>
-                    Don't be scared of the truth because we need to restart the
+                    {`Don't be scared of the truth because we need to restart the
                     human foundation in truth And I love you like Kanye loves
-                    Kanye I love Rick Owens’ bed design but the back is...
+                    Kanye I love Rick Owens’ bed design but the back is...`}
                   </p>
                   <Button href='#' round color='white'>
                     <Subject /> Read
@@ -1244,9 +1254,9 @@ class SectionProducts extends React.Component {
                     </h3>
                   </a>
                   <p className={classes.description}>
-                    Don't be scared of the truth because we need to restart the
+                    {`Don't be scared of the truth because we need to restart the
                     human foundation in truth And I love you like Kanye loves
-                    Kanye I love Rick Owens’ bed design but the back is...
+                    Kanye I love Rick Owens’ bed design but the back is...`}
                   </p>
                   <Button href='#' round color='white'>
                     <Subject /> Read
@@ -1271,9 +1281,9 @@ class SectionProducts extends React.Component {
                     </h3>
                   </a>
                   <p className={classes.description}>
-                    Don't be scared of the truth because we need to restart the
+                    {`Don't be scared of the truth because we need to restart the
                     human foundation in truth And I love you like Kanye loves
-                    Kanye I love Rick Owens’ bed design but the back is...
+                    Kanye I love Rick Owens’ bed design but the back is...`}
                   </p>
                   <Button href='#' round color='white'>
                     <Subject /> Read
@@ -1298,9 +1308,9 @@ class SectionProducts extends React.Component {
                     </h3>
                   </a>
                   <p className={classes.description}>
-                    Don't be scared of the truth because we need to restart the
+                    {`Don't be scared of the truth because we need to restart the
                     human foundation in truth And I love you like Kanye loves
-                    Kanye I love Rick Owens’ bed design but the back is...
+                    Kanye I love Rick Owens’ bed design but the back is...`}
                   </p>
                   <Button href='#' round color='white'>
                     <Subject /> Read
@@ -1323,9 +1333,9 @@ class SectionProducts extends React.Component {
                     <h3 className={classes.cardTitle}>Fashion & Style 2017</h3>
                   </a>
                   <p className={classes.description}>
-                    Don't be scared of the truth because we need to restart the
+                    {`Don't be scared of the truth because we need to restart the
                     human foundation in truth And I love you like Kanye loves
-                    Kanye I love Rick Owens’ bed design but the back is...
+                    Kanye I love Rick Owens’ bed design but the back is...`}
                   </p>
                   <Button href='#' round color='white'>
                     <Subject /> Read

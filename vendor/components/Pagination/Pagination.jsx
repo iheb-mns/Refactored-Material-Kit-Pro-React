@@ -33,7 +33,11 @@ function Pagination({ ...props }) {
               </Button>
             ) : (
               <Button
-                onClick={() => console.log("you've clicked " + prop.text)}
+                onClick={() => {
+                  /* eslint-disable */
+                  console.log("you've clicked " + prop.text)
+                  /* eslint-disable */
+                }}
                 className={paginationLink}
                 disabled={prop.disabled}
               >
@@ -63,6 +67,7 @@ Pagination.propTypes = {
     })
   ).isRequired,
   color: PropTypes.oneOf(['primary', 'info', 'success', 'warning', 'danger']),
+  className: PropTypes.string,
 }
 
 export default withStyles(paginationStyle)(Pagination)

@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 // @material-ui/core components
 import withStyles from '@material-ui/core/styles/withStyles'
 // @material-ui/icons
@@ -582,9 +583,9 @@ function SectionPricing({ ...props }) {
                 Choose a plan for your next project
               </h2>
               <p className={classes.description}>
-                You have Free Unlimited Updates and Premium Support on each
+                {`You have Free Unlimited Updates and Premium Support on each
                 package. You also have 20 days to request a refund if you're not
-                happy with your purchase.
+                happy with your purchase.`}
               </p>
             </GridItem>
           </GridContainer>
@@ -758,6 +759,10 @@ function SectionPricing({ ...props }) {
       {/* Pricing 5 END */}
     </div>
   )
+}
+
+SectionPricing.propTypes = {
+  classes: PropTypes.object,
 }
 
 export default withStyles(pricingStyle)(SectionPricing)

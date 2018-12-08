@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 // nodejs library that concatenates classes
 import classNames from 'classnames'
 // core components
@@ -46,9 +47,9 @@ const SectionBlog = (props) => {
                   </a>
                 </h4>
                 <p className={classes.cardDescription}>
-                  Don't be scared of the truth because we need to restart the
+                  {`Don't be scared of the truth because we need to restart the
                   human foundation in truth And I love you like Kanye loves
-                  Kanye I love Rick Owens’ bed design but the back is...
+                  Kanye I love Rick Owens’ bed design but the back is...`}
                 </p>
               </CardBody>
             </Card>
@@ -76,9 +77,9 @@ const SectionBlog = (props) => {
                   </a>
                 </h4>
                 <p className={classes.cardDescription}>
-                  Don't be scared of the truth because we need to restart the
+                  {`Don't be scared of the truth because we need to restart the
                   human foundation in truth And I love you like Kanye loves
-                  Kanye I love Rick Owens’ bed design but the back is...
+                  Kanye I love Rick Owens’ bed design but the back is...`}
                 </p>
               </CardBody>
             </Card>
@@ -106,9 +107,9 @@ const SectionBlog = (props) => {
                   </a>
                 </h4>
                 <p className={classes.cardDescription}>
-                  Don't be scared of the truth because we need to restart the
+                  {`Don't be scared of the truth because we need to restart the
                   human foundation in truth And I love you like Kanye loves
-                  Kanye I love Rick Owens’ bed design but the back is...
+                  Kanye I love Rick Owens’ bed design but the back is...`}
                 </p>
               </CardBody>
             </Card>
@@ -117,6 +118,10 @@ const SectionBlog = (props) => {
       </div>
     </div>
   )
+}
+
+SectionBlog.propTypes = {
+  classes: PropTypes.object,
 }
 
 export default withStyles(styles)(SectionBlog)

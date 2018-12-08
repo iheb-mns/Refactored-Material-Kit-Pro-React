@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 // nodejs library that concatenates classes
 import classNames from 'classnames'
 // core components
@@ -220,8 +221,9 @@ class SectionPricing extends React.Component {
               <p className={classes.description}>
                 You have <b>Free Unlimited Updates</b> and{' '}
                 <b>Premium Support</b> on each package. You also have
-                <b> 30 days</b> to request a refund if you're not happy with
-                your purchase.
+                <b> 30 days</b>
+                {` to request a refund if you're not happy with
+                your purchase.`}
               </p>
             </GridItem>
             <div className={classes.socialLine}>
@@ -250,6 +252,10 @@ class SectionPricing extends React.Component {
       </div>
     )
   }
+}
+
+SectionPricing.propTypes = {
+  classes: PropTypes.object,
 }
 
 export default withStyles(style)(SectionPricing)

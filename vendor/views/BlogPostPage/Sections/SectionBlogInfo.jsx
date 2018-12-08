@@ -1,5 +1,5 @@
 import React from 'react'
-
+import PropTypes from 'prop-types'
 // @material-ui/core components
 import withStyles from '@material-ui/core/styles/withStyles'
 // @material-ui/icons
@@ -53,9 +53,9 @@ function SectionBlogInfo({ ...props }) {
               <GridItem xs={12} sm={8} md={8}>
                 <h4 className={classes.cardTitle}>Alec Thompson</h4>
                 <p className={classes.description}>
-                  I've been trying to figure out the bed design for the master
+                  {`I've been trying to figure out the bed design for the master
                   bedroom at our Hidden Hills compound...I like good music from
-                  Youtube.
+                  Youtube.`}
                 </p>
               </GridItem>
               <GridItem xs={12} sm={2} md={2}>
@@ -69,6 +69,10 @@ function SectionBlogInfo({ ...props }) {
       </GridContainer>
     </div>
   )
+}
+
+SectionBlogInfo.propTypes = {
+  classes: PropTypes.object,
 }
 
 export default withStyles(sectionBlogInfoStyle)(SectionBlogInfo)

@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 // core components
 import GridContainer from '../../../components/Grid/GridContainer.jsx'
 import GridItem from '../../../components/Grid/GridItem.jsx'
@@ -28,11 +29,11 @@ class SectionContent extends React.Component {
                   For Areas that Need More Space
                 </h6>
                 <h5 className={classes.description}>
-                  If you need elements such as tables, comments, description
+                  {`If you need elements such as tables, comments, description
                   areas, tabs and many others, we've got you covered. We took
                   into consideration multiple use cases and came up with some
                   specific elements that you will love to use. They're beautiful
-                  and easy to use for the end user navigating your website.{' '}
+                  and easy to use for the end user navigating your website.`}{' '}
                 </h5>
               </div>
             </GridItem>
@@ -68,6 +69,10 @@ class SectionContent extends React.Component {
       </div>
     )
   }
+}
+
+SectionContent.propTypes = {
+  classes: PropTypes.object,
 }
 
 export default withStyles(contentStyle)(SectionContent)
