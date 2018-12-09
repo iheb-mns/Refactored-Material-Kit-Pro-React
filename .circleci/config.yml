@@ -1,5 +1,14 @@
 version: 2
 jobs:
+  lint:
+    docker:
+      - image: circleci/node:8.12
+    steps:
+      - checkout
+      - run: echo "npm installing"
+      - run: npm i
+      - run: echo "lint"
+      - run: CI=true npm run lint
   test:
     docker:
       - image: circleci/node:8.12
@@ -11,7 +20,6 @@ jobs:
       - run: CI=true npm run jest-ci # example:CI=true inject env variable CI = true
 workflows:
   version: 2
-  build_test_and_lint: # workflow name
+  lint: # workflow name
     jobs:
-      - test # run parallel
-
+      - lint
