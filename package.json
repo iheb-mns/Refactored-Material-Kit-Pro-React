@@ -7,12 +7,12 @@
   "scripts": {
     "build": "next build",
     "dev": "env-cmd ./.config/dev.env next",
-    "start": "env-cmd ./.config/prod.env next start",
+    "start": "next start",
     "jest": "jest --watch --runInBand",
     "jest-ci": "jest --watch --runInBand",
     "lint": "eslint . --ext=js,jsx",
     "lint-fix": "eslint . --ext=js,jsx --fix",
-    "deploy": "now && now alias && now scale dinewithme.app 1 auto"
+    "deploy": "now rm dinewithme && now && now alias && now scale dinewithme.app 1 auto"
   },
   "dependencies": {
     "@material-ui/core": "^3.6.1",
@@ -26,12 +26,12 @@
     "axios": "^0.18.0",
     "babel-plugin-css-in-js": "^1.5.1",
     "classnames": "^2.2.6",
-    "env-cmd": "^8.0.2",
     "graphql": "^14.0.2",
     "isomorphic-unfetch": "^3.0.0",
     "next": "^7.0.2",
     "next-images": "^1.0.3",
     "nouislider": "^12.1.0",
+    "nprogress": "^0.2.0",
     "prop-types": "^15.6.2",
     "react": "^16.7.0-alpha.2",
     "react-animate-on-scroll": "^2.1.5",
@@ -51,6 +51,7 @@
   "devDependencies": {
     "babel-eslint": "^10.0.1",
     "cross-env": "^5.2.0",
+    "env-cmd": "^8.0.2",
     "enzyme": "^3.7.0",
     "eslint": "^5.9.0",
     "eslint-config-prettier": "^3.3.0",
@@ -114,7 +115,7 @@
   },
   "now": {
     "version": 1,
-    "name": "Dine With Me",
+    "name": "dinewithme",
     "dotenv": "./.config/prod.env",
     "env": {
       "NODE_ENV": "production"
