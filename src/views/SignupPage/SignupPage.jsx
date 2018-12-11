@@ -27,9 +27,9 @@ import InfoArea from '../../components/InfoArea/InfoArea.jsx'
 import CustomInput from '../../components/CustomInput/CustomInput.jsx'
 import HeaderLinks from '../../components/Header/HeaderLinks.jsx'
 
-import signupPageStyle from '../../../static/assets/jss/material-kit-pro-react/views/signupPageStyle.jsx'
+import signupPageStyle from '../../jss/material-kit-pro-react/views/signupPageStyle.jsx'
 
-import image from '../../../static/assets/img/bg7.jpg'
+import image from '../../../static/img/bg7.jpg'
 
 class Components extends React.Component {
   constructor(props) {

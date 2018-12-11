@@ -25,19 +25,19 @@ import CardFooter from '../../../components/Card/CardFooter.jsx'
 import Button from '../../../components/CustomButtons/Button.jsx'
 import Clearfix from '../../../components/Clearfix/Clearfix.jsx'
 
-import suit1 from '../../../../static/assets/img/examples/suit-1.jpg'
-import suit2 from '../../../../static/assets/img/examples/suit-2.jpg'
-import suit3 from '../../../../static/assets/img/examples/suit-3.jpg'
-import suit4 from '../../../../static/assets/img/examples/suit-4.jpg'
-import suit5 from '../../../../static/assets/img/examples/suit-5.jpg'
-import suit6 from '../../../../static/assets/img/examples/suit-6.jpg'
-import color1 from '../../../../static/assets/img/examples/color1.jpg'
-import color3 from '../../../../static/assets/img/examples/color3.jpg'
-import color2 from '../../../../static/assets/img/examples/color2.jpg'
-import dg3 from '../../../../static/assets/img/dg3.jpg'
-import dg1 from '../../../../static/assets/img/dg1.jpg'
+import suit1 from '../../../../static/img/examples/suit-1.jpg'
+import suit2 from '../../../../static/img/examples/suit-2.jpg'
+import suit3 from '../../../../static/img/examples/suit-3.jpg'
+import suit4 from '../../../../static/img/examples/suit-4.jpg'
+import suit5 from '../../../../static/img/examples/suit-5.jpg'
+import suit6 from '../../../../static/img/examples/suit-6.jpg'
+import color1 from '../../../../static/img/examples/color1.jpg'
+import color3 from '../../../../static/img/examples/color3.jpg'
+import color2 from '../../../../static/img/examples/color2.jpg'
+import dg3 from '../../../../static/img/dg3.jpg'
+import dg1 from '../../../../static/img/dg1.jpg'
 
-import styles from '../../../../static/assets/jss/material-kit-pro-react/views/ecommerceSections/productsStyle.jsx'
+import styles from '../../../jss/material-kit-pro-react/views/ecommerceSections/productsStyle.jsx'
 
 class SectionProducts extends React.Component {
   constructor(props) {
@@ -58,9 +58,8 @@ class SectionProducts extends React.Component {
         connect: true,
         range: { min: 30, max: 900 },
         step: 1,
-      }) /* eslint-disable */
+      }) // eslint-disable-next-line no-unused-vars
       .on('update', function(values, handle) {
-        /* eslint-disable */
         let currencyLow = priceLow.dataset.currency
         let currencyHigh = priceHigh.dataset.currency
         priceLow.innerHTML = currencyLow + Math.round(values[0])
@@ -84,6 +83,7 @@ class SectionProducts extends React.Component {
   }
 
   render() {
+    // eslint-disable-next-line react/prop-types
     const { classes } = this.props
 
     return (

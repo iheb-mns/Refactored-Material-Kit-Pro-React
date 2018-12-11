@@ -6,7 +6,7 @@ import withStyles from '@material-ui/core/styles/withStyles'
 // @material-ui/icons
 // core components
 
-import mediaStyle from '../../../static/assets/jss/material-kit-pro-react/components/mediaStyle.jsx'
+import mediaStyle from '../../jss/material-kit-pro-react/components/mediaStyle.jsx'
 
 function Media({ ...props }) {
   const {
@@ -33,9 +33,8 @@ function Media({ ...props }) {
         ) : null}
         {body}
         <div className={classes.mediaFooter}>{footer}</div>
-        {innerMedias !== undefined
-          ? /* eslint-disable */ innerMedias.map((prop, key) => {
-              /* eslint-disable */
+        {innerMedias !== undefined // eslint-disable-next-line no-unused-vars
+          ? innerMedias.map((prop, key) => {
               return prop
             })
           : null}

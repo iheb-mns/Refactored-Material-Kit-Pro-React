@@ -6,15 +6,15 @@ import GridItem from '../../../components/Grid/GridItem.jsx'
 // @material-ui/core components
 import withStyles from '@material-ui/core/styles/withStyles'
 
-import componentsStyle from '../../../../static/assets/jss/material-kit-pro-react/views/presentationSections/componentsStyle.jsx'
+import componentsStyle from '../../../jss/material-kit-pro-react/views/presentationSections/componentsStyle.jsx'
 
-import macbookImage from '../../../../static/assets/img/assets-for-demo/presentationViewSectionComponent/laptop-basics.png'
-import shoppingCartImage from '../../../../static/assets/img/assets-for-demo/presentationViewSectionComponent/table.jpg'
-import shareButtonImage from '../../../../static/assets/img/assets-for-demo/presentationViewSectionComponent/share-btn.jpg'
-import cardImage from '../../../../static/assets/img/assets-for-demo/presentationViewSectionComponent/coloured-card-with-btn.jpg'
-import twitterImage from '../../../../static/assets/img/assets-for-demo/presentationViewSectionComponent/coloured-card.jpg'
-import iconsImage from '../../../../static/assets/img/assets-for-demo/presentationViewSectionComponent/social-row.jpg'
-import repostImage from '../../../../static/assets/img/assets-for-demo/presentationViewSectionComponent/pin-btn.jpg'
+import macbookImage from '../../../../static/img/assets-for-demo/presentationViewSectionComponent/laptop-basics.png'
+import shoppingCartImage from '../../../../static/img/assets-for-demo/presentationViewSectionComponent/table.jpg'
+import shareButtonImage from '../../../../static/img/assets-for-demo/presentationViewSectionComponent/share-btn.jpg'
+import cardImage from '../../../../static/img/assets-for-demo/presentationViewSectionComponent/coloured-card-with-btn.jpg'
+import twitterImage from '../../../../static/img/assets-for-demo/presentationViewSectionComponent/coloured-card.jpg'
+import iconsImage from '../../../../static/img/assets-for-demo/presentationViewSectionComponent/social-row.jpg'
+import repostImage from '../../../../static/img/assets-for-demo/presentationViewSectionComponent/pin-btn.jpg'
 
 class SectionComponents extends React.Component {
   render() {

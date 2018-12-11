@@ -18,9 +18,9 @@ import Muted from '../../../components/Typography/Muted.jsx'
 import Quote from '../../../components/Typography/Quote.jsx'
 import SectionContentAreas from './SectionContentAreas.jsx'
 
-import typographyStyle from '../../../../static/assets/jss/material-kit-pro-react/views/componentsSections/typographyStyle.jsx'
+import typographyStyle from '../../../jss/material-kit-pro-react/views/componentsSections/typographyStyle.jsx'
 
-import image from '../../../../static/assets/img/faces/avatar.jpg'
+import image from '../../../../static/img/faces/avatar.jpg'
 class SectionTypography extends React.Component {
   render() {
     const { classes } = this.props

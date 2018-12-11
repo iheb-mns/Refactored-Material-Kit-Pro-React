@@ -15,9 +15,9 @@ import InputAdornment from '@material-ui/core/InputAdornment'
 // @material-ui icons
 import Mail from '@material-ui/icons/Mail'
 
-import bg7 from '../../../../static/assets/img/bg7.jpg'
+import bg7 from '../../../../static/img/bg7.jpg'
 
-import styles from '../../../../static/assets/jss/material-kit-pro-react/views/componentsSections/preFooter.jsx'
+import styles from '../../../jss/material-kit-pro-react/views/componentsSections/preFooter.jsx'
 
 const SectionPreFooter = (props) => {
   const { classes } = props

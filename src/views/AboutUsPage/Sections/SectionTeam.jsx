@@ -13,12 +13,12 @@ import Button from '../../../components/CustomButtons/Button.jsx'
 // @material-ui/core components
 import withStyles from '@material-ui/core/styles/withStyles'
 
-import teamStyle from '../../../../static/assets/jss/material-kit-pro-react/views/aboutUsSections/teamStyle.jsx'
+import teamStyle from '../../../jss/material-kit-pro-react/views/aboutUsSections/teamStyle.jsx'
 
-import FaceMarc from '../../../../static/assets/img/faces/marc.jpg'
-import FaceChristian from '../../../../static/assets/img/faces/christian.jpg'
-import FaceKendall from '../../../../static/assets/img/faces/kendall.jpg'
-import FaceAvatar from '../../../../static/assets/img/faces/avatar.jpg'
+import FaceMarc from '../../../../static/img/faces/marc.jpg'
+import FaceChristian from '../../../../static/img/faces/christian.jpg'
+import FaceKendall from '../../../../static/img/faces/kendall.jpg'
+import FaceAvatar from '../../../../static/img/faces/avatar.jpg'
 
 function SectionTeam(props) {
   const { classes } = props

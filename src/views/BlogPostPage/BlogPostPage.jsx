@@ -21,7 +21,7 @@ import SectionBlogInfo from './Sections/SectionBlogInfo.jsx'
 import SectionComments from './Sections/SectionComments.jsx'
 import SectionSimilarStories from './Sections/SectionSimilarStories.jsx'
 
-import blogPostPageStyle from '../../../static/assets/jss/material-kit-pro-react/views/blogPostPageStyle.jsx'
+import blogPostPageStyle from '../../jss/material-kit-pro-react/views/blogPostPageStyle.jsx'
 
 class BlogPostPage extends React.Component {
   componentDidMount() {
@@ -42,10 +42,7 @@ class BlogPostPage extends React.Component {
             color: 'info',
           }}
         />
-        <Parallax
-          image={require('../../../static/assets/img/bg5.jpg')}
-          filter='dark'
-        >
+        <Parallax image={require('../../../static/img/bg5.jpg')} filter='dark'>
           <div className={classes.container}>
             <GridContainer justify='center'>
               <GridItem md={8} className={classes.textCenter}>

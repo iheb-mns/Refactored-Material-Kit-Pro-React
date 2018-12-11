@@ -22,7 +22,7 @@ import SectionServices from './Sections/SectionServices.jsx'
 import SectionOffice from './Sections/SectionOffice.jsx'
 import SectionContact from './Sections/SectionContact.jsx'
 
-import aboutUsStyle from '../../../static/assets/jss/material-kit-pro-react/views/aboutUsStyle.jsx'
+import aboutUsStyle from '../../jss/material-kit-pro-react/views/aboutUsStyle.jsx'
 
 class AboutUsPage extends React.Component {
   componentDidMount() {
@@ -44,7 +44,7 @@ class AboutUsPage extends React.Component {
           }}
         />
         <Parallax
-          image={require('../../../static/assets/img/bg9.jpg')}
+          image={require('../../../static/img/bg9.jpg')}
           filter='dark'
           small
         >

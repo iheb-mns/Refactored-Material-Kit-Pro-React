@@ -27,16 +27,15 @@ import CardFooter from '../../../components/Card/CardFooter.jsx'
 import CustomInput from '../../../components/CustomInput/CustomInput.jsx'
 import Button from '../../../components/CustomButtons/Button.jsx'
 
-import contactsStyle from '../../../../static/assets/jss/material-kit-pro-react/views/sectionsSections/contactsStyle.jsx'
+import contactsStyle from '../../../jss/material-kit-pro-react/views/sectionsSections/contactsStyle.jsx'
 
-import city from '../../../../static/assets/img/examples/city.jpg'
+import city from '../../../../static/img/examples/city.jpg'
 
 const { publicRuntimeConfig } = getConfig()
 
 const RegularMap = withScriptjs(
-  /* eslint-disable */
+  // eslint-disable-next-line no-unused-vars
   withGoogleMap((props) => (
-    /* eslint-disable */
     <GoogleMap
       defaultZoom={14}
       defaultCenter={{ lat: 44.43353, lng: 26.093928 - 0.025 }}

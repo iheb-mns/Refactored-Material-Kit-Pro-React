@@ -16,7 +16,7 @@ import Button from '../../components/CustomButtons/Button.jsx'
 import HeaderLinks from '../../components/Header/HeaderLinks.jsx'
 import Parallax from '../../components/Parallax/Parallax.jsx'
 
-import landingPageStyle from '../../../static/assets/jss/material-kit-pro-react/views/landingPageStyle.jsx'
+import landingPageStyle from '../../jss/material-kit-pro-react/views/landingPageStyle.jsx'
 
 // Sections for this page
 import SectionProduct from './Sections/SectionProduct.jsx'
@@ -46,10 +46,7 @@ class LandingPage extends React.Component {
           }}
           {...rest}
         />
-        <Parallax
-          image={require('../../../static/assets/img/bg8.jpg')}
-          filter='dark'
-        >
+        <Parallax image={require('../../../static/img/bg8.jpg')} filter='dark'>
           <div className={classes.container}>
             <GridContainer>
               <GridItem xs={12} sm={6} md={6}>

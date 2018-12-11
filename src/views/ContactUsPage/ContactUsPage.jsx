@@ -28,15 +28,14 @@ import Button from '../../components/CustomButtons/Button.jsx'
 import Footer from '../../components/Footer/Footer.jsx'
 import HeaderLinks from '../../components/Header/HeaderLinks.jsx'
 
-import contactUsStyle from '../../../static/assets/jss/material-kit-pro-react/views/contactUsStyle.jsx'
+import contactUsStyle from '../../jss/material-kit-pro-react/views/contactUsStyle.jsx'
 
 // Only holds serverRuntimeConfig and publicRuntimeConfig from next.config.js nothing else.
 const { publicRuntimeConfig } = getConfig()
 
 const CustomSkinMap = withScriptjs(
-  /* eslint-disable */
+  // eslint-disable-next-line no-unused-vars
   withGoogleMap((props) => (
-    /* eslint-disable */
     <GoogleMap
       defaultZoom={14}
       defaultCenter={{ lat: 44.43353, lng: 26.093928 }}
@@ -116,6 +115,7 @@ class ContactUsPage extends React.Component {
     document.body.scrollTop = 0
   }
   render() {
+    // eslint-disable-next-line react/prop-types
     const { classes } = this.props
     return (
       <div>

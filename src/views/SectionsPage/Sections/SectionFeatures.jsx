@@ -22,11 +22,11 @@ import GridContainer from '../../../components/Grid/GridContainer.jsx'
 import GridItem from '../../../components/Grid/GridItem.jsx'
 import InfoArea from '../../../components/InfoArea/InfoArea.jsx'
 
-import featuresStyle from '../../../../static/assets/jss/material-kit-pro-react/views/sectionsSections/featuresStyle.jsx'
+import featuresStyle from '../../../jss/material-kit-pro-react/views/sectionsSections/featuresStyle.jsx'
 
-import iphone from '../../../../static/assets/img/sections/iphone.png'
-import iphone2 from '../../../../static/assets/img/sections/iphone2.png'
-import bg9 from '../../../../static/assets/img/bg9.jpg'
+import iphone from '../../../../static/img/sections/iphone.png'
+import iphone2 from '../../../../static/img/sections/iphone2.png'
+import bg9 from '../../../../static/img/bg9.jpg'
 
 function SectionFeatures({ ...props }) {
   const { classes, ...rest } = props

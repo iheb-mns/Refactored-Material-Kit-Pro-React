@@ -16,7 +16,7 @@ import Popper from '@material-ui/core/Popper'
 // core components
 import Button from '../CustomButtons/Button.jsx'
 
-import customDropdownStyle from '../../../static/assets/jss/material-kit-pro-react/components/customDropdownStyle.jsx'
+import customDropdownStyle from '../../jss/material-kit-pro-react/components/customDropdownStyle.jsx'
 
 class CustomDropdown extends React.Component {
   constructor(props) {
@@ -150,10 +150,10 @@ class CustomDropdown extends React.Component {
           })}
         >
           {({
-            /* eslint-disable */
+            /* eslint-disable no-unused-vars*/
             TransitionProps,
             placement,
-            /* eslint-disable */
+            /* eslint-enable */
           }) => (
             <Grow
               in={open}

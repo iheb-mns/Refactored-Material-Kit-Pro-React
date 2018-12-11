@@ -19,7 +19,7 @@ import SectionInterested from './Sections/SectionInterested.jsx'
 import SectionImage from './Sections/SectionImage.jsx'
 import SubscribeLine from './Sections/SubscribeLine.jsx'
 
-import blogPostsPageStyle from '../../../static/assets/jss/material-kit-pro-react/views/blogPostsPageStyle.jsx'
+import blogPostsPageStyle from '../../jss/material-kit-pro-react/views/blogPostsPageStyle.jsx'
 
 class BlogPostsPage extends React.Component {
   componentDidMount() {
@@ -41,7 +41,7 @@ class BlogPostsPage extends React.Component {
           }}
         />
         <Parallax
-          image={require('../../../static/assets/img/bg10.jpg')}
+          image={require('../../../static/img/bg10.jpg')}
           filter='dark'
           small
         >
